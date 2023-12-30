@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.flexCenter {
+  @apply flex items-center justify-center;
+}
+
+.flexBetween {
+  @apply flex items-center justify-between;
+}
+
+.primaryButton {
+  @apply flex items-center justify-center text-sm font-normal leading-6 text-white rounded-sm bg-customGreen;
+  @apply w-[90px] sm:w-[120px] md:w-[140px] lg:w-[192px];
+  @apply h-[24px] sm:h-[30px] md:h-[36px] lg:h-[48px]  sm:text-xl md:text-3xl lg:text-4xl;
+}
+
+/* Make the button responsive for all devices */
+@media (max-width: 1024px) {
+  .primaryButton {
+    @apply w-[150px] h-[40px] text-xl text-center;
+  }
+}
+
+@media (max-width: 768px) {
+  .primaryButton {
+    @apply w-[120px] h-[32px] text-lg text-center;
+  }
+}
+
+.secondaryButton {
+  @apply w-[192px] h-[48px] rounded-lg outline-customGreen text-black font-normal text-4xl;
+}
+
+.h1-Bold {
+  @apply font-bold text-black text-8xl;
+}
+
+.h1-normal {
+  @apply font-normal text-black text-8xl;
+}
+
+.h2-bold {
+  @apply text-5xl font-semibold text-black;
+}
+
+.h3-bold {
+  @apply text-4xl font-semibold text-black;
+}
+
+.h4-bold {
+  @apply text-xl font-semibold text-black;
+}
+
+.h5-bold {
+  @apply text-lg font-semibold text-black;
+}
+
+.h6-bold {
+  @apply text-base font-normal text-black;
+}
+
+.admin-Headers {
+  @apply text-6xl font-semibold leading-[38.4px] mt-[72px];
+}
